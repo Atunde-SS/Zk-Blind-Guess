@@ -10,12 +10,7 @@
     {
       "imports": {
         "three": "https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.module.js",
-        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.1/examples/jsm/",
-        "@noir-lang/noir_wasm": "https://cdn.jsdelivr.net/npm/@noir-lang/noir_wasm@latest/+esm",
-        "@noir-lang/noir_js": "https://cdn.jsdelivr.net/npm/@noir-lang/noir_js@latest/+esm",
-        "@noir-lang/noirc_abi": "https://cdn.jsdelivr.net/npm/@noir-lang/noirc_abi@latest/+esm",
-        "@noir-lang/acvm_js": "https://cdn.jsdelivr.net/npm/@noir-lang/acvm_js@latest/+esm",
-        "@aztec/bb.js": "https://cdn.jsdelivr.net/npm/@aztec/bb.js@latest/+esm"
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.1/examples/jsm/"
       }
     }
     </script>
@@ -32,7 +27,7 @@
       color: gold;
       opacity: 0;
       transition: opacity 1s ease-in-out;
-    ">🎉 ZK Blind Guess Success! 🎉</div>
+    ">ZK Blind Guess Success!</div>
     <div style="
       position: absolute;
       top: 50px;
@@ -42,10 +37,10 @@
       padding: 10px;
       border-radius: 5px;
     ">
-      <strong>🔓 Public Hash:</strong>
+      <strong>Public Hash:</strong>
       <span id="public-hash-value" style="font-family: monospace; display: block;"></span>
       <button id="copy-public-hash" style="margin-top: 5px;">Copy</button>
-      <strong>🔐 Proof Hash:</strong>
+      <strong>Proof Hash:</strong>
       <span id="proof-hash-value" style="font-family: monospace; display: block;"></span>
       <button id="copy-proof-hash" style="margin-top: 5px;">Copy</button>
     </div>
