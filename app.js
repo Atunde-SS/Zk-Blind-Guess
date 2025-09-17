@@ -2,7 +2,7 @@
 import { compile, createFileManager } from "@noir-lang/noir_wasm";
 import { UltraHonkBackend, BarretenbergSync } from '@aztec/bb.js';
 import { Noir } from '@noir-lang/noir_js';
-// ------------------- Three.js & Controls -------------------
+// ------------------- Three.js & Controls ------------------
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { gsap } from 'https://cdn.jsdelivr.net/npm/gsap@3.12.5/index.js';
