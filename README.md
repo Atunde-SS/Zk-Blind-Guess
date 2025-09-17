@@ -50,14 +50,14 @@ If you want to build this from scratch (e.g., for learning or customization):
 
 2. Create `index.html` with the provided HTML content (see the code in this repo or the user's query for the exact markup).
 
-3. Create `index.js` with the provided JavaScript code (again, from this repo or query).
+3. Create `app.js` with the provided JavaScript code (again, from this repo or query).
 
 4. Ensure the importmap in `index.html` points to Three.js CDNs correctly.
 
 5. Test by opening `index.html` in a browser.
 
 To customize:
-- Adjust `numRows` and `numCols` in `index.js` for longer/shorter games.
+- Adjust `numRows` and `numCols` in `app.js` for longer/shorter games.
 - Modify the Noir circuit in `getCircuit()` for different logic.
 - Add more visuals or levels using Three.js.
 
