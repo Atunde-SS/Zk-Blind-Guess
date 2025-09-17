@@ -9,10 +9,9 @@ import { gsap } from 'https://cdn.jsdelivr.net/npm/gsap@3.12.5/index.js';
 // ------------------- WASM Init -------------------
 import initNoirC from "@noir-lang/noirc_abi";
 import initACVM from "@noir-lang/acvm_js";
-// Direct fetch for WASM files (bypasses importmap resolution issues on static hosts)
-const acvmUrl = "https://cdn.jsdelivr.net/npm/@noir-lang/acvm_js@0.28.0/web/acvm_js_bg.wasm";
-const noircUrl = "https://cdn.jsdelivr.net/npm/@noir-lang/noirc_abi@0.28.0/web/noirc_abi_wasm_bg.wasm";
-await Promise.all([initACVM(fetch(acvmUrl)), initNoirC(fetch(noircUrl))]);
+import acvm from "@noir-lang/acvm_js/web/acvm_js_bg.wasm?url";
+import noirc from "@noir-lang/noirc_abi/web/noirc_abi_wasm_bg.wasm?url";
+await Promise.all([initACVM(fetch(acvm)), initNoirC(fetch(noirc))]);
 // ------------------- Noir Circuit File Creation -------------------
 function stringToReadableStream(str) {
   return new Response(new TextEncoder().encode(str)).body;
